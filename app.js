@@ -36,7 +36,7 @@ function startGame() {
    }
    for (let i = 0; i < getQuantityElements(100 * setting.traffic); i++) {
       const enemy = document.createElement('div')
-      let randomCar = Math.round(Math.random() + 1)
+      let randomCar = Math.round(Math.random() * 2)
       console.log(randomCar)
       enemy.classList.add('enemy')
       enemy.y = -100 * setting.traffic * (i + 1)
